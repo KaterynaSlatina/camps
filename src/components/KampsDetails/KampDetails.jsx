@@ -90,10 +90,6 @@ export default function KampDetails({ kamps }) {
           type="button"
           onClick={() => handleButtonClick('Features')}
           active={activeButton === 'Features'}
-
-          // className={
-          //   activeButton === 'Features' ? 'btnFeatures active' : 'btnFeatures'
-          // }
         >
           Features
         </BtnFeaturesOrReviews>
@@ -102,10 +98,6 @@ export default function KampDetails({ kamps }) {
           type="button"
           onClick={() => handleButtonClick('Reviews')}
           active={activeButton === 'Reviews'}
-
-          // className={
-          //   activeButton === 'Reviews' ? 'btnReviews  active' : 'btnReviews'
-          // }
         >
           Reviews
         </BtnFeaturesOrReviews>

@@ -2,27 +2,27 @@ import { useEffect, useState } from 'react';
 import KampCard from '../KampCard/KampCard';
 import { fetchKamps } from '../../store/operations';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectKamps } from '../../store/selectors';
-import { BtnLoadMore, KampListWrapper } from './KampList.styled';
+import { selectFilteredKamps } from '../../store/selectors';
+import { BtnLoadMore, KampListWrapper } from './KampsList.styled';
+import EmptyKampList from '../EmptyKampList/EpmtyKampList';
 
 export default function KampsList() {
   const [isLoadedItems, setIsLoadedItems] = useState(4);
-  const kamps = useSelector(selectKamps);
+  const kamps = useSelector(selectFilteredKamps);
   const dispatch = useDispatch();
 
   const shownKamps = kamps ? kamps.slice(0, isLoadedItems) : null;
 
-  const {
-    // filteredKamps,
-    // isLoading,
-    error,
-  } = useSelector((state) => state.kamps);
+  const { error } = useSelector((state) => state.kamps);
 
   useEffect(() => {
     dispatch(fetchKamps());
   }, [dispatch]);
 
-  // if (isLoading) return <div>Loading...</div>;
+  if (shownKamps.length === 0) {
+    return <EmptyKampList />;
+  }
+
   if (error) return <div>Error: {error}</div>;
 
   const handleLoadMore = () => {
@@ -38,11 +38,9 @@ export default function KampsList() {
           </li>
         ))}
       </ul>
-      {shownKamps < kamps ? (
+      {shownKamps.length < kamps.length ? (
         <BtnLoadMore onClick={handleLoadMore}>Load more</BtnLoadMore>
-      ) : (
-        []
-      )}
+      ) : null}
     </KampListWrapper>
   );
 }

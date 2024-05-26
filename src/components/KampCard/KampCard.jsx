@@ -47,7 +47,6 @@ export default function KampCard({ kamps }) {
   const location = kamps.location;
   const parts = location.split(', ');
   const formattedLocation = parts.reverse().join(', ');
-  // console.log(formattedLocation);
 
   return (
     <CampCardWrapper>
@@ -78,7 +77,6 @@ export default function KampCard({ kamps }) {
                 <use href={`${svg}#icon-map`}></use>
               </SvgReviewAndLocation>
               <p>{formattedLocation}</p>
-              {/* <p>{kamps.location}</p> */}
             </RatingItem>
           </RatingList>
         </div>

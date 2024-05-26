@@ -38,11 +38,6 @@ export const KampImg = styled.img`
   object-position: center;
 `;
 
-// export const ButtonContainer = styled.div`
-//   display: flex;
-//   gap: 150px;
-// `;
-
 export const BtnShowMore = styled.button`
   display: flex;
   width: 170px;
@@ -75,7 +70,6 @@ export const BtnRemove = styled.button`
 `;
 
 export const FavoriteInfo = styled.div`
-  /* display: flex; */
   margin-left: 30px;
   width: 526px;
 

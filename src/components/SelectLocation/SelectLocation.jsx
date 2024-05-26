@@ -1,19 +1,19 @@
 import { LocationInput } from './SelectLocation.styles';
 
 export default function SelectLocation(props) {
-  const { label, name, options, ...rest } = props;
+  const { options, name, onChange } = props;
+  // console.log(options);
 
   return (
     <div>
-      <label htmlFor={name}>{label}</label>
-      <LocationInput as="select" name={name} {...rest}>
-        {options.map((option) => {
-          return (
-            <option key={option.value} value={option.value}>
-              {option.key}
-            </option>
-          );
-        })}
+      <label htmlFor={name}></label>
+      <LocationInput as="select" name={name} onChange={onChange}>
+        <option value="">All camps</option>
+        {options.map((location) => (
+          <option key={location} value={location}>
+            {location}
+          </option>
+        ))}
       </LocationInput>
     </div>
   );

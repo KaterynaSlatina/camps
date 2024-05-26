@@ -12,7 +12,7 @@ import {
   KampImg,
   KampPrice,
   SvgLocation,
-} from './FavoriteList.styled.js';
+} from './FavoriteList.styled.jsx';
 import Modal from '../Modal/Modal.jsx';
 import KampDetails from '../KampsDetails/KampDetails.jsx';
 import { useState } from 'react';

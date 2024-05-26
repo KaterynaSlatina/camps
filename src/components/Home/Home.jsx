@@ -1,15 +1,22 @@
-import { HeroTextContainer, HomeContainer } from './Home.styled.jsx';
+import {
+  BtnCatalog,
+  HeroImgContainer,
+  HeroText,
+  HeroTextContainer,
+  HeroTitle,
+  HomeContainer,
+} from './Home.styled.jsx';
 
 export default function Home() {
   return (
     <HomeContainer>
-      <HeroTextContainer>
-        <h1>Rent the campervan of your dreams</h1>
-        <p>Go on exciting journeys with us!</p>
-      </HeroTextContainer>
-      {/* <div className={css.heroImg}>
-          <img src={camper} alt="camper" />
-        </div> */}
+      <HeroImgContainer>
+        <HeroTextContainer>
+          <HeroTitle>Rent the campervan of your dreams</HeroTitle>
+          <HeroText>Go on exciting journeys with us!</HeroText>
+        </HeroTextContainer>
+        <BtnCatalog to="/catalog">Catalog</BtnCatalog>
+      </HeroImgContainer>
     </HomeContainer>
   );
 }

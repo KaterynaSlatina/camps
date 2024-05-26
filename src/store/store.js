@@ -1,6 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-// import { persistStore, persistReducer } from "redux-persist";
 import storage from 'redux-persist/lib/storage';
 
 import {
@@ -19,6 +18,7 @@ import { favoritesReducer } from './favoritesSlice';
 const persistConfig = {
   key: 'root',
   storage,
+  whitelist: ['kamps'],
 };
 
 const rootReducer = combineReducers({

@@ -1,12 +1,15 @@
 import styled from '@emotion/styled';
-import camper from './assets/img/Camper.jpeg';
-import 'normalize.css';
 
 export const AppWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
   width: 100%;
   height: 100vh;
-  /* background-image: url(${camper});
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 100% 100%; */
+  background-size: 100% 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 `;

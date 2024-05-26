@@ -17,16 +17,16 @@ export const Navigation = styled.nav`
   gap: 20px;
   transition: opacity 500ms ease;
 `;
-// export const Logo = styled.`
-// `;
 
 export const StyledNavLink = styled(NavLink)`
+  display: flex;
+  width: fit-content;
+  font-size: 17px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  position: relative;
 
-  &:hover,
-  &:focus,
-  .active {
+  &.active {
     opacity: 0.5;
     color: red;
   }
@@ -35,4 +35,24 @@ export const StyledNavLink = styled(NavLink)`
 export const Contacts = styled.ul`
   display: flex;
   gap: 20px;
+`;
+
+export const ContactList = styled.ul`
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  flex-direction: column;
+  transition: opacity 500ms ease;
+`;
+
+export const ContactLink = styled(NavLink)`
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+    color: red;
+  }
 `;
