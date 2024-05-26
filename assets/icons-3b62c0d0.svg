@@ -21,11 +21,11 @@
     </symbol>
 
    <symbol id="icon-calendar" viewBox="0 0 32 32" fill="none" stroke="#000000">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M25.333 5.333h-18.667c-1.473 0-2.667 1.194-2.667 2.667v18.667c0 1.473 1.194 2.667 2.667 2.667h18.667c1.473 0 2.667-1.194 2.667-2.667v-18.667c0-1.473-1.194-2.667-2.667-2.667z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M21.333 2.667v5.333"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M10.667 2.667v5.333"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M4 13.333h24"></path>
-</symbol>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M25.333 5.333h-18.667c-1.473 0-2.667 1.194-2.667 2.667v18.667c0 1.473 1.194 2.667 2.667 2.667h18.667c1.473 0 2.667-1.194 2.667-2.667v-18.667c0-1.473-1.194-2.667-2.667-2.667z"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M21.333 2.667v5.333"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M10.667 2.667v5.333"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M4 13.333h24"></path>
+   </symbol>
 
     <symbol id="icon-route" viewBox="0 0 32 32">
       <path d="M6.67 4a2.67 2.67 0 1 0 0 5.33 2.67 2.67 0 0 0 0-5.33zM1.33 6.67a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0zM25.33 22.67a2.67 2.67 0 1 0 0 5.33 2.67 2.67 0 0 0 0-5.33zM20 25.33a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0z"/>
@@ -35,10 +35,10 @@
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M26.4 13.33c0 9.34-12 17.34-12 17.34s-12-8-12-17.34a12 12 0 1 1 24 0z"/>
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M14.4 17.33a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
     </symbol>
-    <symbol id="icon-microwave" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.24" d="M29.71 5.71H2.28c-.3 0-.59.12-.8.34s-.34.5-.34.8v18.3c0 .3.12.59.34.8s.5.34.8.34h27.43c.3 0 .6-.12.81-.34s.34-.5.34-.8V6.84c0-.3-.12-.59-.34-.8s-.5-.34-.8-.34z"/>
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.24" d="M25.14 11.43h1.15M25.14 16h1.15m-6.86-5.71H6.86c-.3 0-.6.12-.81.33s-.34.5-.34.8v9.15c0 .3.12.6.34.81s.5.34.8.34h12.58c.3 0 .6-.12.8-.34s.34-.5.34-.8v-9.15c0-.3-.12-.6-.33-.8s-.5-.34-.81-.34z"/>
-    </symbol>
+   <symbol id="icon-microwave" viewBox="0 0 32 32" fill="none" stroke="#000000">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.24" d="M29.714 5.714h-27.429c-0.303 0-0.594 0.12-0.808 0.335s-0.335 0.505-0.335 0.808v18.286c0 0.303 0.12 0.594 0.335 0.808s0.505 0.335 0.808 0.335h27.429c0.303 0 0.594-0.12 0.808-0.335s0.335-0.505 0.335-0.808v-18.286c0-0.303-0.12-0.594-0.335-0.808s-0.505-0.335-0.808-0.335z"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.24" d="M25.143 11.428h1.143M25.143 16h1.143M19.428 10.286h-12.571c-0.303 0-0.594 0.12-0.808 0.335s-0.335 0.505-0.335 0.808v9.143c0 0.303 0.12 0.594 0.335 0.808s0.505 0.335 0.808 0.335h12.571c0.303 0 0.594-0.12 0.808-0.335s0.335-0.505 0.335-0.808v-9.143c0-0.303-0.12-0.594-0.335-0.808s-0.505-0.335-0.808-0.335z"></path>
+   </symbol>
     <symbol id="icon-water" viewBox="0 0 32 32">
       <path stroke-miterlimit="10" stroke-width="2.4" d="M25 20c0 5.52-3.48 9-9 9s-9-3.48-9-9c0-5.93 6.45-13.93 8.43-16.24a.76.76 0 0 1 .57-.27.74.74 0 0 1 .57.27C18.55 6.07 25 14.07 25 20z"/>
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M21.5 20.5A4.5 4.5 0 0 1 17 25"/>
@@ -46,6 +46,10 @@
     <symbol id="icon-freezer" viewBox="0 0 32 32" fill="none">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.08" d="M23.4 3H8.6a2 2 0 0 0-2 2v20.39c0 1.1.9 2 2 2h14.8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/>
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.08" d="M6.6 13.13h18.8M10.3 10.57V6.53m0 12.91V15.4M8.43 27.39v.7a.91.91 0 0 0 .9.91h1.65a.91.91 0 0 0 .92-.91v-.7m8.2 0v.7a.91.91 0 0 0 .91.91h1.66a.91.91 0 0 0 .91-.91v-.7"/>
+    </symbol>
+    <symbol id="icon-microwave" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.24" d="M29.714 5.714h-27.429c-0.303 0-0.594 0.12-0.808 0.335s-0.335 0.505-0.335 0.808v18.286c0 0.303 0.12 0.594 0.335 0.808s0.505 0.335 0.808 0.335h27.429c0.303 0 0.594-0.12 0.808-0.335s0.335-0.505 0.335-0.808v-18.286c0-0.303-0.12-0.594-0.335-0.808s-0.505-0.335-0.808-0.335z"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.24" d="M25.143 11.428h1.143M25.143 16h1.143M19.428 10.286h-12.571c-0.303 0-0.594 0.12-0.808 0.335s-0.335 0.505-0.335 0.808v9.143c0 0.303 0.12 0.594 0.335 0.808s0.505 0.335 0.808 0.335h12.571c0.303 0 0.594-0.12 0.808-0.335s0.335-0.505 0.335-0.808v-9.143c0-0.303-0.12-0.594-0.335-0.808s-0.505-0.335-0.808-0.335z"></path>
     </symbol>
     <symbol id="icon-bath" viewBox="0 0 32 32" fill="none">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.2" d="m2.67 2.67 4.16 4.16m11.67 0A8.25 8.25 0 0 0 6.83 18.5M21 4.33 4.33 21m15 3.33v.02m-6.66-1.68v.01m5-5.01v.01m5-5.01v.01m-8.34 16.65v.02m10-10.02v.02m5-5.02v.02"/>
