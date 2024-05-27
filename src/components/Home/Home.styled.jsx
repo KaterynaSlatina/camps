@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import camper from '../../assets/img/Camper.jpg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -54,4 +54,53 @@ export const BtnCatalog = styled(Link)`
   btnShowMore:focus {
     background-color: #d84343;
   }
+`;
+
+export const PopularQuestionsContainer = styled.div`
+  margin: 60px;
+  border: 1px solid;
+  border-color: rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+`;
+
+export const PopularQuestionsTitle = styled.h2`
+  margin-bottom: 40px;
+  text-align: center;
+`;
+
+export const Questions = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+`;
+
+export const QuestionItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f2f4f7;
+  border-radius: 20px;
+  padding: 20px;
+`;
+
+export const LinkToCatalog = styled(NavLink)`
+  color: #e44848;
+
+  &:hover,
+  :focus {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+`;
+
+export const SvgHome = styled.svg`
+  width: 50px;
+  height: 50px;
+`;
+
+export const QuestionAndSvg = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 `;
