@@ -1,9 +1,15 @@
 import styled from '@emotion/styled';
+import { theme } from '../../styles/theme';
 
 export const FavoritesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 90px;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    margin-top: 110px;
+  }
 `;
 
 export const FavoriteItem = styled.li`
@@ -11,7 +17,7 @@ export const FavoriteItem = styled.li`
   display: flex;
   flex-wrap: nowrap;
   border: 1px solid;
-  border-color: rgba(16, 24, 40, 0.2);
+  border-color: ${theme.colors.borderColor};
   border-radius: 20px;
   padding: 24px;
   margin-bottom: 32px;
@@ -27,7 +33,7 @@ export const FavLocation = styled.div`
   margin-bottom: 10px;
 `;
 export const SvgLocation = styled.svg`
-  stroke: #101828;
+  stroke: ${theme.colors.textColor};
   width: 16px;
   height: 16px;
   margin-right: 4px;
@@ -42,8 +48,8 @@ export const BtnShowMore = styled.button`
   display: flex;
   width: 170px;
   padding: 16px 40px;
-  color: #fff;
-  background-color: #e44848;
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.red};
   border-radius: 200px;
   border: none;
   line-height: 1.5;
@@ -51,16 +57,15 @@ export const BtnShowMore = styled.button`
   font-weight: 500;
   margin-top: 20px;
 
-  &:hover {
-    background-color: transparent;
-    color: black;
-    border: 1px solid #e44848;
+  &:hover,
+  btnShowMore:focus {
+    background-color: ${theme.colors.redHover};
   }
 `;
 export const BtnRemove = styled.button`
   background-color: transparent;
   border: none;
-  color: #e44848;
+  color: ${theme.colors.red};
   margin-top: 50px;
   margin-left: 300px;
 
@@ -80,6 +85,6 @@ export const FavDescription = styled.p`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #475467;
+  color: ${theme.colors.greyTextColor};
   width: 420px;
 `;

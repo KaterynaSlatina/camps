@@ -1,12 +1,12 @@
 import { FilterCheckboxes } from '../FilterCheckboxes/FilterCheckboxes.jsx';
 import { FilterLocation } from '../FilterLocation/FilterLocation.jsx';
-import { FilterWrapper } from './Filter.styles.jsx';
+import { FilterContainer } from './Filter.styles.jsx';
 
 export const Filter = () => {
   return (
-    <FilterWrapper>
+    <FilterContainer>
       <FilterLocation />
       <FilterCheckboxes />
-    </FilterWrapper>
+    </FilterContainer>
   );
 };

@@ -1,21 +1,31 @@
 import styled from '@emotion/styled';
+import { theme } from '../../styles/theme';
 
 export const KampListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    margin-top: 60px;
+  }
 `;
 
 export const BtnLoadMore = styled.button`
   display: flex;
-  padding: 16px 32px;
-  border: 1px solid rgba(71, 84, 103, 0.2);
+  font-size: 14px;
+  padding: 12px 30px;
+  border: 1px solid ${theme.colors.borderColor};
   background: transparent;
   border-radius: 200px;
-  color: #101828;
+  color: ${theme.colors.textColor};
   margin-bottom: 40px;
 
   &:hover {
-    border-color: #e44848;
+    border-color: ${theme.colors.red};
+  }
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    padding: 16px 32px;
   }
 `;

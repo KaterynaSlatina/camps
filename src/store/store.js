@@ -18,7 +18,7 @@ import { favoritesReducer } from './favoritesSlice';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['kamps'],
+  // whitelist: ['kamps'],
 };
 
 const rootReducer = combineReducers({

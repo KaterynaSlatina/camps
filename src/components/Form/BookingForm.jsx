@@ -6,8 +6,11 @@ import {
   BookingField,
   BookingFieldComment,
   BookingFormContainer,
+  BookingFormText,
+  BookingFormTitle,
   Error,
   FormInputs,
+  FormLabelContainer,
   FormText,
   SendBookingButton,
   SvgCalendar,
@@ -44,8 +47,10 @@ const BookingForm = () => {
   return (
     <BookingFormContainer>
       <FormText>
-        <h2>Book your campervan now</h2>
-        <p>Stay connected! We are always ready to help you.</p>
+        <BookingFormTitle>Book your campervan now</BookingFormTitle>
+        <BookingFormText>
+          Stay connected! We are always ready to help you.
+        </BookingFormText>
       </FormText>
 
       <Formik
@@ -56,19 +61,19 @@ const BookingForm = () => {
         {({ isSubmitting }) => (
           <Form>
             <FormInputs>
-              <div>
+              <FormLabelContainer>
                 <label htmlFor="name"> </label>
                 <BookingField name="name" type="text" placeholder="Name" />
 
                 <Error name="name" component="div" />
-              </div>
+              </FormLabelContainer>
 
-              <div>
+              <FormLabelContainer>
                 <label htmlFor="email"> </label>
                 <BookingField name="email" type="email" placeholder="Email" />
 
                 <Error name="email" component="div" />
-              </div>
+              </FormLabelContainer>
 
               <BookingDateContainer>
                 <SvgCalendar>
@@ -83,7 +88,7 @@ const BookingForm = () => {
                 <Error name="bookingDate" component="div" />
               </BookingDateContainer>
 
-              <div>
+              <FormLabelContainer>
                 <label htmlFor="comment"></label>
                 <BookingFieldComment
                   name="comment"
@@ -92,7 +97,7 @@ const BookingForm = () => {
                 />
 
                 <Error name="comment" component="div" />
-              </div>
+              </FormLabelContainer>
             </FormInputs>
 
             <SendBookingButton type="submit" disabled={isSubmitting}>

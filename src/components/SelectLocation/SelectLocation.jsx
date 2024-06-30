@@ -1,11 +1,11 @@
-import { LocationInput } from './SelectLocation.styles';
+import { LocationInput, SelectLocationWrapper } from './SelectLocation.styles';
 
 export default function SelectLocation(props) {
   const { options, name, onChange } = props;
   // console.log(options);
 
   return (
-    <div>
+    <SelectLocationWrapper>
       <label htmlFor={name}></label>
       <LocationInput as="select" name={name} onChange={onChange}>
         <option value="">All camps</option>
@@ -15,6 +15,6 @@ export default function SelectLocation(props) {
           </option>
         ))}
       </LocationInput>
-    </div>
+    </SelectLocationWrapper>
   );
 }

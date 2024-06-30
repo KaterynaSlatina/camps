@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { theme } from '../../styles/theme';
 
 export const ModalContainer = styled.div`
   position: fixed;
@@ -6,7 +7,7 @@ export const ModalContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(17, 18, 19, 0.4);
+  background-color: ${theme.colors.modalBackgroundColor};
   overflow: hidden;
   overflow-y: auto;
   transition: opacity 0.3s;
@@ -28,29 +29,43 @@ export const ModalContent = styled.div`
   position: relative;
   margin: 100px;
   border-radius: 20px;
-  background-color: #ffffff;
-  padding: 40px;
+  background-color: ${theme.colors.white};
+  padding: 20px;
   transform: translateY(-50px);
   transition:
     opacity 0.3s,
     transform 0.3s;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    padding: 40px;
+  }
 `;
 
 export const ModalCloseBtn = styled.button`
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 8px;
+  right: 8px;
   width: 32px;
   height: 32px;
   padding: 0;
   background-color: transparent;
   border: none;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    top: 16px;
+    right: 16px;
+  }
 `;
 
 export const SvgClose = styled.svg`
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   margin-top: 10px;
   margin-right: 20px;
-  stroke: #101828;
+  stroke: ${theme.colors.textColor};
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 32px;
+    height: 32px;
+  }
 `;

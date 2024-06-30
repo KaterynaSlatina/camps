@@ -50,7 +50,7 @@ export default function KampCard({ kamps }) {
 
   return (
     <CampCardWrapper>
-      <CampImg src={kamps.gallery[0]} alt="img" width="290" height="310" />
+      <CampImg src={kamps.gallery[0]} alt="img" />
 
       <CampDescription>
         <div>

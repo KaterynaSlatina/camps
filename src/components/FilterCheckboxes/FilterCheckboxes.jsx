@@ -1,10 +1,11 @@
-import { Formik, Form } from 'formik';
+import { Formik } from 'formik';
 import {
   Check,
   EquipmentCheckboxes,
   EquipmentItem,
   EquipmentName,
   FilterTitle,
+  FormWrapper,
   SearchButton,
   SectionName,
   SvgFilters,
@@ -21,7 +22,7 @@ import { useEffect } from 'react';
 
 export const FilterCheckboxes = () => {
   const dispatch = useDispatch();
-  const filterOptions = useSelector(selectFilterOptions);
+  const filterOptions = useSelector(selectFilterOptions) || {};
   const selectedLocation = useSelector(selectSelectedLocation);
 
   useEffect(() => {
@@ -54,7 +55,7 @@ export const FilterCheckboxes = () => {
         }}
       >
         {({ values, setFieldValue }) => (
-          <Form>
+          <FormWrapper>
             <SectionName>Filters</SectionName>
             <VehicleSection>
               <FilterTitle>Vehicle equipment</FilterTitle>
@@ -172,7 +173,7 @@ export const FilterCheckboxes = () => {
               </EquipmentCheckboxes>
             </VehicleSection>
             <SearchButton type="submit">Search</SearchButton>
-          </Form>
+          </FormWrapper>
         )}
       </Formik>
     </div>

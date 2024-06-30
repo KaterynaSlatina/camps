@@ -1,4 +1,5 @@
 import {
+  AnswerText,
   BtnCatalog,
   HeroImgContainer,
   HeroText,
@@ -10,6 +11,7 @@ import {
   PopularQuestionsTitle,
   QuestionAndSvg,
   QuestionItem,
+  QuestionTitle,
   Questions,
   SvgHome,
 } from './Home.styled.jsx';
@@ -35,9 +37,9 @@ export default function Home() {
               <SvgHome>
                 <use href={`${svg}#icon-question`}></use>
               </SvgHome>
-              <h3>How to rent a camp?</h3>
+              <QuestionTitle>How to rent a camp?</QuestionTitle>
             </QuestionAndSvg>
-            <p>
+            <AnswerText>
               Follow the link to the{' '}
               <LinkToCatalog to="/catalog">Catalog</LinkToCatalog> and select
               the appropriate camp. Fill out the form and we will contact you.
@@ -46,7 +48,7 @@ export default function Home() {
               how to use it and explain everything in detail. We are always in
               touch, so we will definitely help if something happens along the
               way.
-            </p>
+            </AnswerText>
           </QuestionItem>
 
           <QuestionItem>
@@ -54,13 +56,15 @@ export default function Home() {
               <SvgHome>
                 <use href={`${svg}#icon-calendar`}></use>
               </SvgHome>
-              <h3>How far in advance is it better to book a camp?</h3>
+              <QuestionTitle>
+                How far in advance is it better to book a camp?
+              </QuestionTitle>
             </QuestionAndSvg>
-            <p>
+            <AnswerText>
               It is better to book 2 weeks in advance. However, is camp is
               available, you can make a reservation through us 24 hours before
               the planned start.
-            </p>
+            </AnswerText>
           </QuestionItem>
 
           <QuestionItem>
@@ -68,13 +72,15 @@ export default function Home() {
               <SvgHome>
                 <use href={`${svg}#icon-document`}></use>
               </SvgHome>
-              <h3>What category of driver`s license is required?</h3>
+              <QuestionTitle>
+                What category of driver`s license is required?
+              </QuestionTitle>
             </QuestionAndSvg>
-            <p>
+            <AnswerText>
               For most camps, the usual category “B” is suitable. There are
               large models of camps that require category “C” to drive, we will
               definitely draw your attention to this when choosing a camp.
-            </p>
+            </AnswerText>
           </QuestionItem>
 
           <QuestionItem>
@@ -82,12 +88,12 @@ export default function Home() {
               <SvgHome>
                 <use href={`${svg}#icon-fuel`}></use>
               </SvgHome>
-              <h3>What is the fuel consumption?</h3>
+              <QuestionTitle>What is the fuel consumption?</QuestionTitle>
             </QuestionAndSvg>
-            <p>
+            <AnswerText>
               Small models average 12 liters per 100 km. Camps with larger
               engines are more thirsty - 25 liters per 100 km.
-            </p>
+            </AnswerText>
           </QuestionItem>
 
           <QuestionItem>
@@ -95,13 +101,15 @@ export default function Home() {
               <SvgHome>
                 <use href={`${svg}#icon-water`}></use>
               </SvgHome>
-              <h3>Where to flush the toilet/dirty water/fill the water?</h3>
+              <QuestionTitle>
+                Where to flush the toilet/dirty water/fill the water?
+              </QuestionTitle>
             </QuestionAndSvg>
-            <p>
+            <AnswerText>
               The composting toilet cassette can be flushed into a public
               toilet. And also into the sewer at the campsite. You can refill
               clean water at a gas station or at a campsite.
-            </p>
+            </AnswerText>
           </QuestionItem>
         </Questions>
       </PopularQuestionsContainer>

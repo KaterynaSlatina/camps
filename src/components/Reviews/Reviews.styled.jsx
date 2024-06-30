@@ -1,12 +1,20 @@
 import styled from '@emotion/styled';
+import { theme } from '../../styles/theme';
 
 export const ReviewsContainer = styled.div`
   display: flex;
   gap: 24px;
+  flex-direction: column;
+
+  @media screen and (min-width: ${theme.breakpoint.desktop}) {
+    flex-direction: row;
+  }
 `;
 
 export const ReviewList = styled.ul`
-  width: 430px;
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 430px;
+  }
 `;
 
 export const ReviewItem = styled.div`
@@ -26,11 +34,11 @@ export const FirstInitialCover = styled.div`
   border-radius: 100%;
   width: 60px;
   height: 60px;
-  background-color: #f2f4f7;
+  background-color: ${theme.colors.greyBackgroundColor};
 `;
 
 export const FirstInitial = styled.h2`
-  color: #e44848;
+  color: ${theme.colors.red};
   margin-bottom: 0;
 `;
 
@@ -42,5 +50,9 @@ export const ReviewerNameAndStars = styled.div`
 `;
 
 export const ReviewComment = styled.p`
-  color: #475467;
+  color: ${theme.colors.greyTextColor};
+  font-size: 14px;
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    font-size: 16px;
+  }
 `;
