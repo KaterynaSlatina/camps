@@ -43,8 +43,8 @@ export default function FavoriteList() {
                 <KampImg
                   src={product.gallery[0]}
                   alt="img"
-                  width="290"
-                  height="310"
+                  // width="290"
+                  // height="310"
                 />
                 <FavoriteInfo>
                   <h2>{product.name}</h2>

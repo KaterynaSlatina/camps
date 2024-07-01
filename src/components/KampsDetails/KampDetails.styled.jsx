@@ -23,7 +23,10 @@ export const DetailsTitleContainer = styled.div`
   gap: 8px;
   padding: 0;
   margin-bottom: 24px;
-  width: 450px;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 450px;
+  }
 `;
 
 export const RatingAndLocation = styled.ul`

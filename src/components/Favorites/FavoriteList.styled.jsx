@@ -13,14 +13,24 @@ export const FavoritesWrapper = styled.div`
 `;
 
 export const FavoriteItem = styled.li`
-  width: 800px;
+  width: 350px;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   border: 1px solid;
   border-color: ${theme.colors.borderColor};
   border-radius: 20px;
   padding: 24px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 750px;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: ${theme.breakpoint.desktop}) {
+    width: 800px;
+  }
 `;
 export const KampPrice = styled.b`
   font-size: 24px;
@@ -42,6 +52,11 @@ export const KampImg = styled.img`
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 290px;
+    height: 310px;
+  }
 `;
 
 export const BtnShowMore = styled.button`
@@ -67,24 +82,49 @@ export const BtnRemove = styled.button`
   border: none;
   color: ${theme.colors.red};
   margin-top: 50px;
-  margin-left: 300px;
+  margin-left: 240px;
 
   &:hover {
     color: pink;
   }
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    margin-left: 300px;
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoint.desktop}) {
+    margin-left: 350px;
+    margin-top: 100px;
+  }
 `;
 
 export const FavoriteInfo = styled.div`
-  margin-left: 30px;
-  width: 526px;
-
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 526px;
+    margin-top: 0;
+    margin-left: 30px;
+    align-items: flex-start;
+  }
 `;
+
 export const FavDescription = styled.p`
+  width: 320px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   color: ${theme.colors.greyTextColor};
-  width: 420px;
+
+  @media screen and (min-width: ${theme.breakpoint.tablet}) {
+    width: 380px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoint.desktop}) {
+    width: 420px;
+  }
 `;

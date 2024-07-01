@@ -72,6 +72,7 @@ export const BookingFieldComment = styled(Field)`
   padding: 18px;
   min-height: 114px;
   font-size: 14px;
+  width: 210px;
 
   @media screen and (min-width: ${theme.breakpoint.tablet}) {
     font-size: 16px;
